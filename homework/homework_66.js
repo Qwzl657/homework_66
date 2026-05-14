@@ -26,4 +26,13 @@ window.onload = function () {
         }
     }
 
+    const container = document.getElementById('container');
+
+    for (let i = 1; i <= 5; i++) {
+        const newElement = document.createElement('div');
+        newElement.classList.add('element');
+        newElement.innerHTML = 'Element ' + i;
+        container.append(newElement);
+    }
+
 };
